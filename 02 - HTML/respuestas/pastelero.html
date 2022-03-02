@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+
+     <!-- Estilos CSS -->
+     <style type="text/css">
+        .section{
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 40px;
+            margin-inline-end: 40px;
+        }
+        p {
+            font-size:12pt;
+            font-family:Courier New;
+        }
+        p.footertext {
+            font-size:8pt;
+            color: #5a515a;
+            font-family:Courier New;
+        }
+        h1, h2, h3, figure.header figcaption {
+            font-family: Arial,sans-serif;
+        }
+        h3.tabletitles {
+            margin-left: 15px;
+            margin-top: 35px;
+        }
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 35px;
+            margin: 0 auto;
+            width: 70%;
+        }
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        td{
+            border: 1px solid #dddddd;
+            font-family:Courier New;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #3ba9ad67;
+            font-family:Courier New;
+        }
+        footer{
+            padding: 10px;
+            margin-top: 55px;
+            background-color: #dbd1d25e;
+        }
+        a {
+            font-size:8pt;
+            color: #914678;
+            font-family:Courier New;
+        }
+        figure.header {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        figure.header img {
+            width: 80px;
+            display: block;
+        }
+
+        figure.header figcaption {
+            height: 18px;
+            font-size: 2em;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <figure class="header">
+        <img src="/home/arantza/Documentos/MICROSOFT/FrontEnd-Mision-main/02 - HTML/respuestas/img/harimiellogo.png" 
+        alt="logoHarinaYmiel" width="80px">
+        <figcaption>Harina y Miel</figcaption>
+    </figure>
+    <hr>
+
+    <div class="section">
+        <h2>Administrador</h2>
+
+        <h3 class="tabletitles"">Disponibilidad de sabores</h3>
+        <table>
+            <tr>
+                <th>Sabor</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Vainilla Francesa</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Red Velvet</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td>52</td>
+            </tr>
+        </table>
+        <h3 class="tabletitles">Disponibilidad de adornos</h3>
+        <table>
+            <tr>
+                <th>Adornos</th>
+                <th>Cantidad</th>
+                <th>Unidad</th>
+            </tr>
+            <tr>
+                <td>Letrero personalizado</td>
+                <td>112</td>
+                <td>pieza</td>
+            </tr>
+            <tr>
+                <td>Perlas de colores</td>
+                <td>445</td>
+                <td>gramos</td>
+            </tr>
+            <tr>
+                <td>Chantilly</td>
+                <td>8</td>
+                <td>kilos</td>
+            </tr>
+            <tr>
+                <td>Confitería</td>
+                <td>766</td>
+                <td>gramos</td>
+            </tr>
+            <tr>
+                <td>Macaroons</td>
+                <td>31</td>
+                <td>piezas</td>
+            </tr>
+            <tr>
+                <td>Frosting</td>
+                <td>2</td>
+                <td>kilos</td>
+            </tr>
+        </table>
+        <h3 class="tabletitles">Pedidos pendientes</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Detalles</th>
+                <th>Sabor</th>
+                <th>Adornos</th>
+            </tr>
+            <tr>
+                <td>Juan Pérez López</td>
+                <td>5566566880</td>
+                <td>juanperez@gmail.com</td>
+                <td>Color rosa pastel y verde menta. Poner "Te amo" en el letrero</td>
+                <td>Chocolate y Café</td>
+                <td>Letrero y macaroons</td>
+            </tr>
+            <tr>
+                <td>Susana Aguilar</td>
+                <td>5565887765</td>
+                <td>susiagui@gmail.com</td>
+                <td>Poner solo decoracion en chantilly, quiero que sea de arcoiris y poner "Feliz Cumpleaños"</td>
+                <td>Vainilla y Red Velvet</td>
+                <td>Chantilly, confitería y perlas</td>
+            </tr>
+            <tr>
+                <td>Mónica Rivera Ramos</td>
+                <td>44989561111</td>
+                <td>estreellitaR@gmail.com</td>
+                <td>Quiero que sea de 3 pisos color blanco y rosado con perlas plateadas, macaroons de colores y un letrero de "Happy Birthday"</td>
+                <td>Vainilla francesa</td>
+                <td>Letrero, perlas y macaroons</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p class="footertext">Horario: L a V de 10:00 a.m a 04:00 p.m 
+        <p class="footertext">
+            Teléfono:<a href="callto:5512345678">5512345678</a>
+            Mail:<a style="margin-left: 10px;" href="mailto:info@harinaymiel.com">info@harinaymiel.com</a>
+        </p>
+        <p class="footertext">Av. de la Convención de 1914 Nte. 115, Villas de San Francisco, 20020 Aguascalientes, Ags.</p>
+    </footer>
+</body>
+</html>
