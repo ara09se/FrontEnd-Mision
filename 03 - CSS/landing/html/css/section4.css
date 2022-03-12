@@ -1,0 +1,115 @@
+section.emergencyContact{
+    display: flex;
+    width: 100%;
+    height: 130vh;
+    flex-direction: row;
+}
+div.medicalPhone{
+    width: 48%;
+    height: 125vh;
+    overflow: hidden;
+    background-image: url(../img/medical1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.containerEmergency{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+div.emergencyContact{
+    width: 66%;
+    margin: 4px 19%;
+    position: relative;
+}
+div.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    margin:auto;
+    width: 68%;
+    margin-top: 13vh;
+}
+div.card{
+    border: 3px solid;
+    border-color: #eae8e8b5;
+    border-radius: 7px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+div.card:hover  {
+    box-shadow: 0 6px 34px -15px  rgba(110, 110, 110, 0.664), 0 0px 0px;
+}
+div.card:hover button.clearCardButton {
+    box-shadow: 0 9px 10px 0 rgba(0,0,0,0.2), 0 6px 20px;
+    background-color: #3353d1;
+    color: #ffffff;
+}
+
+div.emergencyCardTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+div.cardTitleText{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+div.iconDiv{
+    margin-top: 16px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+aside.emergencyTitle{
+    color: #1f3e72;
+    font-family: Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 98px;
+}
+p.emergencyText{
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c5c5c;
+    line-height: 29px;
+    margin-top: 7vh;
+}
+p.cardTitleText{
+    height: 1px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+p.cardSubtitleText{
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #8d8d8d;
+}
+button.clearCardButton{
+    border: none;
+    color: #3353d1;
+    margin: 21px 21px;
+    width: 145px;
+    height: 40px;
+    background-color:#e2e9ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 4px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+img.emergencyCardIcons{
+    height: 8vh;
+    box-shadow: 0 6px 34px -15px  rgba(110, 110, 110, 0.664), 0 0px 0px;
+}

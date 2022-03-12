@@ -1,0 +1,97 @@
+
+section.whyVaccine{
+    margin-top: 15vh;
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    flex-direction: column;
+}
+div.vaccineMark{
+    margin: 0 15px;
+}
+div.vaccineTypes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 17vh;
+    margin-top: 0;
+    justify-content: center;
+}
+div.containerWhyVaccine{
+    display: flex;
+    flex-direction: row;
+}
+div.backgroundTriangule {
+    width: 47%;
+    overflow: hidden;
+    background-image: url(../img/triaungule1.png);
+    background-size: cover;
+    background-position: center;
+    height: 33vh;
+}
+div.textWhyVaccine {
+    width: 33%;
+    margin: 0px 10%;
+    position: relative;
+}
+div.vaccineBenefits{
+    margin: 0 0px;
+}
+div.vaccineBenefitsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 41px;
+}
+div.benefitCard{
+    display: flex;
+    flex-direction: column;
+    width: calc(22% - 47px);
+    padding: 27px;
+    transition: 0.5s;
+    border: 2px solid #e8dede;
+    border-radius: 9px;
+}
+div.benefitCard:hover{
+    box-shadow: 0 8px 23px 1px rgba(161, 161, 161, 0.616), 0 0px 0px
+}
+aside.whyTitle {
+    color: #1f3e72;
+    font-family: Verdana, sans-serif;
+    font-size: 37px;
+    font-weight: bolder;
+    margin-top: 78px;
+}
+p.whyText{
+    font-family: Verdana, sans-serif;
+    color: #5c5c5c;
+    line-height: 27px;
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+p.benefitTitle{
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: #2d3647;
+    padding: 2px;
+}
+p.benefitDescription{
+    margin-top: 15px;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #5c5c5c;
+    line-height: 23px;
+}
+img.benefitIcon{
+    border-radius: 9px;
+    transition: 0.2s
+}
+div.benefitCard:hover img.benefitIcon {
+    box-shadow: 0 4px 6px 1px rgba(139, 139, 139, 0.616), 0 0px 0px;
+    border: 1px solid #e9e9e9;
+}

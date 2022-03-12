@@ -1,0 +1,97 @@
+section.beforeVaccine{
+    margin-top: 2vh;
+        display: flex;
+        width: 100%;
+        height: 130vh;
+        flex-direction: row;
+}
+div.nurseImage{
+    width: 46%;
+    height: 129vh;
+    overflow: hidden;
+    background-image: url(../img/nurse1.png);
+    background-size: cover;
+    background-position: center;
+}
+div.containerBeforeVaccine {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+}
+div.preparationTextContainer{
+    width: 66%;
+    margin: 10px 11%;
+    position: relative;
+}
+div.vaccineTipsContainer{
+        width: 54%;
+    margin: 11% 11%;
+    position: relative;
+}
+div.containerCardTips{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    padding: 6px 21px;
+    border: 2px solid;
+    border-color: #f0efefd5;
+    border-radius: 7px;
+}
+div.containerCardTips:hover{
+    box-shadow: 0 6px 34px -15px  rgba(161, 161, 161, 0.616), 0 0px 0px
+}
+div.cardTipsTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.cardTitleText{
+    flex-grow: 1;
+    margin-left: 3%;
+}
+div.descriptionText{
+    padding: 0 11%;
+    height: 0;
+    overflow: hidden;
+}
+div.containerCardTips:hover div.descriptionText{
+    height: auto;
+}
+div.iconTips{
+    margin-right: 13px;
+}
+aside.preparationTitle{
+    color: #1f3e72;
+    font-family: Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 15vh;
+}
+p.preparationText{
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c5c5c;
+    line-height: 29px;
+    margin-top: 7vh;
+}
+p.vaccineTipsTitle{
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+p.vaccineTipsText{
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+img.iconVaccineTips{
+    height: 4vh;
+}
+img.iconVaccineSelect{
+    height: 2vh;
+    opacity: 65%;
+}
+    
