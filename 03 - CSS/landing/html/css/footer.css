@@ -1,7 +1,11 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Manrope:wght@800&family=Mulish:wght@800;900&family=Poppins:wght@300;500;600&family=Prompt:wght@600&family=Questrial&display=swap');
+
 footer{
     background-color: #e2e9ff;
     width: 100%;
-    margin-top: 6%;
+    margin-top: 4%;
     display: flex;
 }
 footer.image{
@@ -15,8 +19,8 @@ div.footerContainer{
     flex-wrap: wrap;
     flex-direction: column;
     width: 80%;
-    margin: 5vh auto 2vh auto;
-    gap:30px;
+    margin: 5vh auto 0vh auto;
+    gap:15px;
 }
 div.footerText, div.footerTinyContainer{
     display:flex;
@@ -42,15 +46,13 @@ div.privacyPolicyWidth{
     width: 11%;
 }
 p.vaccination{
-    font-family: Verdana, sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 22px;
-    font-weight: bolder;
     color: #3353d1 
 }
 p.vaccinationText{
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    font-weight: 600;
     color: #8d8d8d;
     transition: 0.5s
 }
@@ -61,10 +63,10 @@ p.goalText{
     width: 29%;
 }
 p.infoTitles{
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: bolder;
-    color: #213583;
+    color: #132158;
 }
 div.footerTinyContainer p.vaccinationText {
     margin-bottom: 0;

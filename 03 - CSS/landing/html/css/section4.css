@@ -1,3 +1,7 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Manrope:wght@800&family=Mulish:wght@800;900&family=Poppins:wght@300;500;600&family=Prompt:wght@600&family=Questrial&display=swap');
+
 section.emergencyContact{
     display: flex;
     width: 100%;
@@ -6,7 +10,7 @@ section.emergencyContact{
 }
 div.medicalPhone{
     width: 48%;
-    height: 125vh;
+    height: 124vh;
     overflow: hidden;
     background-image: url(../img/medical1.png);
     background-size: cover;
@@ -17,11 +21,10 @@ div.containerEmergency{
     width: 52%;
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
 }
 div.emergencyContact{
     width: 66%;
-    margin: 4px 19%;
+    margin: 0px 19%;
     position: relative;
 }
 div.cardContainer{
@@ -31,7 +34,7 @@ div.cardContainer{
     justify-content: space-around;
     margin:auto;
     width: 68%;
-    margin-top: 13vh;
+    margin-top: 15vh;
 }
 div.card{
     border: 3px solid;
@@ -40,7 +43,7 @@ div.card{
     display:flex;
     flex-direction: column;
     margin-bottom: 25px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 div.card:hover  {
     box-shadow: 0 6px 34px -15px  rgba(110, 110, 110, 0.664), 0 0px 0px;
@@ -48,6 +51,13 @@ div.card:hover  {
 div.card:hover button.clearCardButton {
     box-shadow: 0 9px 10px 0 rgba(0,0,0,0.2), 0 6px 20px;
     background-color: #3353d1;
+    color: #ffffff;
+}
+a{
+    color: #3353d1;
+    text-decoration: none;
+}
+div.card:hover a{
     color: #ffffff;
 }
 
@@ -70,40 +80,36 @@ div.iconDiv{
 }
 aside.emergencyTitle{
     color: #1f3e72;
-    font-family: Verdana, sans-serif;
-    font-size: 32px;
-    font-weight: bolder;
-    margin-top: 98px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 34px;
+    margin-top: 81px;
 }
 p.emergencyText{
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #5c5c5c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #777777;
     line-height: 29px;
     margin-top: 7vh;
 }
 p.cardTitleText{
     height: 1px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 600;
-    color: #5c5c5c;
+    color: #3f4c63;
 }
 p.cardSubtitleText{
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    font-weight: 600;
     color: #8d8d8d;
 }
-button.clearCardButton{
+button.clearCardButton {
     border: none;
     color: #3353d1;
     margin: 21px 21px;
     width: 145px;
     height: 40px;
     background-color:#e2e9ff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins' sans-serif;
     font-size: 13px;
     border-radius: 4px;
     font-weight: bolder;
