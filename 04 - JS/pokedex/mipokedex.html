@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi Pokedex</title>
+    <link rel="stylesheet" href="./mipokedex.css">
+    
+</head>
+<body>
+    <div class="banner">
+        <div class="bannerContainer">
+            <div class="pokedexBannerImg">
+                <img  class="pokeBanner" src="./img/banner.png" alt="PokeBanner"  width="900" height="640">
+            </div>
+            <div class="pokedexInput">
+                <input type="text" placeholder="Busca tu Pokemón" id="pokeName" name="pokeName" onkeyup="fetchOnEnter(event)">
+                <button onclick="fetchPokemon(document.getElementById('pokeName').value)"><img src="./img/buscar2.png"></button>
+            </div>
+        </div>
+    </div>
+    <section class="pokedex">
+        <div class="pokedexContainer">
+            <img class="pokeDex" src="./img/pokedex2.0.png">
+            <div class="contentText">
+                <div class="imageStatsContainer">
+                    <div class="imagePokemon">
+                        <img src="./img/pikachuBuscar.png" alt="PokemonImg" id="pokeImg" class="pokemonArt">
+                    </div >
+                    <div class="stats">
+                        <div class="nameContainer">
+                            <p class="name" id="name">Sin datos</p>
+                        </div>
+                        <div class="typeContainer">
+                            <p  class="type" alt="type" id="type1">Sin datos</p>
+                            <p  class="type" style="display: none;" alt="type" id="type2">Type</p> 
+                        </div>
+                        <div class="statsContainer">
+                            <div class="progressContainer">
+                                <span>HP</span>
+                                <progress id="hp" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer">
+                                <span>ATK</span>
+                                <progress id="atk" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer">
+                                <span>DEF</span>
+                                <progress id="def" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer">
+                                <span>SP ATK</span>
+                                <progress id="spatk" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer">
+                                <span>SP DEF</span>
+                                <progress id="spdef" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer">
+                                <span>SPD</span>
+                                <progress id="spd" max="160" value="0"/>
+                            </div>
+                            <div class="progressContainer singleStats">
+                                <span id="weight">0 kg</span> <span id="height">0 m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillsContainer">
+                    <div class="skillsTitle">
+                        <p class="skillTitle">Movimientos</p>
+                    </div>
+                    <div class="moveDescription">
+                        <p class="skillTitle" id="move1">Sin datos</p>
+                    </div>
+                    <div class="moveDescription">
+                        <p class="skillTitle" id="move2">Sin datos</p>
+                    </div>
+                    <div class="moveDescription">
+                        <p class="skillTitle" id="move3">Sin datos</p>
+                    </div>
+                    <div class="moveDescription">
+                        <p class="skillTitle" id="move4">Sin datos</p>
+                    </div>
+                </div>
+                <div class="errorSnorlax">
+                    <p class="errorMessage"><strong>Oops!</strong> Un Snorlax salvaje a bloqueado tu camino y no pudimos encontrar tu Pokemón :(</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="./mipokedex.js"></script>
+</footer>
+</html>

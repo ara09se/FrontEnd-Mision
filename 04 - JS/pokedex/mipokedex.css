@@ -1,0 +1,327 @@
+body{
+    margin:0;
+    background-color: black;
+}
+div.errorSnorlax{
+    display: none;
+    background-image: url(./img/snorlaxError.png);
+    height: 38vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+p.errorMessage{
+    position: relative;
+    top: 66%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 112, 112);
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    width: 92%;
+    left: 4%;
+}
+strong{
+    color: rgb(236, 181, 0);
+}
+div.banner{
+    background-color: rgb(73, 73, 73);
+    width: 100%;
+    height: 100px;
+}
+div.bannerContainer{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 95px;
+}
+div.pokedexBannerImg{
+    width: 50%;
+}
+div.pokedexImg{
+    width: 100%;
+    margin:0 auto;
+}
+div.pokedexInput{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+div.pokedexContainer{
+    margin: 4.5vh auto;
+    height: calc(91vh - 115px);
+    width: calc(calc(91vh - 115px) * .506);
+    position: relative;
+} 
+div.contentText{
+    position: relative;
+    top: -78%;
+    width: 93%;
+    margin: auto;
+    height: 55%;
+    overflow: auto;
+    font-size: 1.5em;
+}
+div.imageStatsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 210px;
+    margin-top: 1vh;
+}
+div.skillsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+div.skillsTitle{
+    width: 85%;
+    border-radius: 25px;
+    background-color:#312729;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #9b9b9b;
+    height: 27px;
+    align-items: center;
+}
+div.stats{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+}
+div.nameContainer{
+    background-color: rgb(192 19 37);
+    border-style: solid;
+    border-color: #7b121e;
+    border-radius: 20px 0 0 0;
+    
+}
+div.typeContainer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 17px;
+    background-color: rgb(90, 90, 90);
+    border-style: solid;
+    border-color: #312729;
+}
+div.statsContainer{
+    flex-grow: 1;
+    background: #bfd4cd;
+    border-style: solid;
+    border-color: #a8a8a8;
+    border-radius: 0 0 0 20px;
+}
+div.imagePokemon{
+    background-image: url("./img/vector.png");
+    background-size: contain;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-position-x: 0vh;
+    background-position-y: 7vh;
+}
+div.progressContainer{
+    display: flex;
+    flex-direction: row;    
+    width: 90%;
+    margin: auto;
+}
+div.moveDescription{
+    margin-top: 1vh;
+    width: 65%;
+    border-radius: 25px;
+    background-color:#312729;
+    border-width: 3px;
+    height: 20px;
+    background-color: rgb(90, 90, 90);
+    border-style: solid;
+    border-color: #312729;
+}
+img.icon{
+    height: 2vh;
+}
+img.pokeBanner{
+    width: 275px;
+    height: auto;
+    display: block;
+}
+img.pokeDex{
+    height: calc(100vh - 9vh - 115px);
+    display: block;
+    margin:auto;
+}
+img.pokemonArt{
+    width: 17vh;
+    margin-top: 5vh;
+    margin-left:1vh
+}
+section.pokedex{
+    width: 100%;
+}
+button{
+    background-color: darkred;
+    width: 50px;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+}
+input{
+    width: 23vw;
+    height: 25px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(243, 243, 243);
+    min-width: 200px;
+}
+p.name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: .7em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+    line-height: .8em;
+}
+p.type{
+    text-transform: capitalize;
+    font-size: .5em;
+    line-height: 17px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px 0;
+    flex-grow: 1;
+    height: 100%;
+}
+p.stats{
+    font-family: sans-serif;
+    color: #505050;
+    font-size: .8em;
+}
+p.skillTitle{
+    text-transform: capitalize;
+    margin: 0;
+    line-height: 25px;
+    font-size: .7em;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+div.statsContainer span{
+    font-family: sans-serif;
+    font-size: .4em;
+    width: 115px;
+    line-height: 20px;
+}
+div.statsContainer progress[value] {
+    appearance: none;
+    
+    border: none;
+    
+    height: 12px;
+    background-color: whiteSmoke;
+    border-radius: 22px;
+    
+    position: relative;
+    margin: 4px 0;
+}
+div.statsContainer progress[value]::-webkit-progress-bar {
+    border-radius: 22px;
+} 
+div.statsContainer progress[value]::-webkit-progress-value {
+    position: relative;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius: 22px 0 0 22px;
+}
+div.statsContainer progress#hp[value]::-webkit-progress-bar {
+    background-color: rgb(153, 199, 139);
+} 
+div.statsContainer progress#hp[value]::-webkit-progress-value {
+    background-color: rgb(109, 187, 64);
+}
+
+div.statsContainer progress#atk[value]::-webkit-progress-bar {
+    background-color: rgb(248, 222, 150);
+} 
+div.statsContainer progress#atk[value]::-webkit-progress-value {
+    background-color:  rgb(248, 190, 31);
+}
+
+div.statsContainer progress#def[value]::-webkit-progress-bar {
+    background-color: rgb(231, 177, 127);
+} 
+div.statsContainer progress#def[value]::-webkit-progress-value {
+    background-color:  rgb(211, 120, 35);
+}
+
+div.statsContainer progress#spatk[value]::-webkit-progress-bar {
+    background-color: rgb(133, 204, 198);
+} 
+div.statsContainer progress#spatk[value]::-webkit-progress-value {
+    background-color: rgb(50, 178, 211);
+}
+
+div.statsContainer progress#spdef[value]::-webkit-progress-bar {
+    background-color: rgb(144, 167, 189);
+} 
+div.statsContainer progress#spdef[value]::-webkit-progress-value {
+    background-color: rgb(99, 152, 201);
+}
+
+div.statsContainer progress#spd[value]::-webkit-progress-bar {
+    background-color:rgb(180, 152, 185)
+} 
+div.statsContainer progress#spd[value]::-webkit-progress-value {
+    background-color:rgb(168, 91, 204);
+}
+div.progressContainer.singleStats{
+    justify-content: space-evenly;
+}
+div.progressContainer.singleStats span{
+    width: auto;
+}
+@media (max-width: 600px) {
+    div.banner{
+        height: 115px;
+    }
+    div.bannerContainer {
+        flex-direction: column;
+    }
+    div.pokedexInput {
+        justify-content: center;
+    }
+    img.pokeBanner{
+        margin: 0 auto 15px;
+    }
+    div.pokedexBannerImg{
+        width: 100%;
+    }
+}
+@media (min-width: 700px) {
+    img.pokemonArt{
+        margin: 2vh;
+    }
+    div.imagePokemon{
+        background-position-x: 1vh;
+        background-position-y: 3vh;
+    }
+} 
+
+@media (min-width: 1000px) {
+    img.pokemonArt{
+        margin: -1vh 0vh;
+    }
+    div.imagePokemon{
+        background-position-x: 3vh;
+        background-position-y: 1vh;
+    }
+} 
