@@ -7,10 +7,10 @@
         <h1>Bienvenido a Harina y Miel</h1>
         <p>Tenemos las siguientes opciones</p>
         <div class=hrefbutton>
-            <router-link tag="button" to="/menu">
+            <router-link tag="button" :to="{name:'menu'}">
                 <button>Nuestro menú</button>
             </router-link>
-            <router-link tag="button" to="/backoffice">
+            <router-link tag="button" :to="{name:'backoffice'}">
                 <button>Backoffice Pastelero</button>
             </router-link>
         </div>

@@ -22,7 +22,7 @@
             style="margin-top: 35px"
         />
 
-        <router-link class="linkMenu" tag="button" to="/pedido">
+        <router-link class="linkMenu" tag="button" :to="{name:'pedido'}">
             <button>Realizar pedido</button>
         </router-link>
     </div>

@@ -8,10 +8,10 @@ import BackOffice from  '../pages/BackOffice.vue'
 // const Backoffice = { template: '<div>About</div>' }
 
 const routes = [
-    { path: '/', component: Home, name:'home' },
-    { path: '/menu', component: Menu },
-    { path: '/backoffice', component: BackOffice },
-    { path: '/pedido', component: Order },
+    { path: '/FrontEnd-Mision/05 - VUEJS/pasteleria/dist/', component: Home, name:'home' },
+    { path: '/FrontEnd-Mision/05 - VUEJS/pasteleria/dist/menu', component: Menu, name:'menu' },
+    { path: '/FrontEnd-Mision/05 - VUEJS/pasteleria/dist/backoffice', component: BackOffice, name:'backoffice' },
+    { path: '/FrontEnd-Mision/05 - VUEJS/pasteleria/dist/pedido', component: Order, name:'order' },
 ]
 
 export const router = createRouter({
